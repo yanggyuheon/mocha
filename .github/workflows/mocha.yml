@@ -22,8 +22,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          npm install dotenv
           npm install mocha -g
-          npm install dotenv -g
           mocha feature1.spec.js
         env:
           CI: true
